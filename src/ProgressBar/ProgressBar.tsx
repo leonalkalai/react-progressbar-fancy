@@ -62,7 +62,11 @@ const ProgressBar: React.FC<IProgressBarProps> = (props) => {
           }}
         >
           <div className={`progressBar`}>
-            <div className={`progressTrack`} />
+            <div className={`progressTrack`} 
+            style={{
+            width: progressWidth,
+            margin: "0px 10px",
+            }} />
             {renderProgressFiller(false)}
             {!disableGlow && renderProgressFiller(true)}
           </div>
